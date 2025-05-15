@@ -32,9 +32,9 @@
 
 ## 📁 Project Structure
 📦 quick-convert
-├── 📄 index.html
+├── 📄 App.html
 ├── 📄 styles.css
-└── 📄 script.js
+└── 📄 App.js
 
 ## 💡 Example Usage
 
