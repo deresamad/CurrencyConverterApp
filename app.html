@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickConvert - Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>QuickConvert</h1>
+        <p class="subtitle">Simple Currency Converter</p>
+
+        <div class="converter">
+            <div class="input-group">
+                <input type="number" id="amount" placeholder="Amount" value="1" min="0">
+                <select id="from-currency"></select>
+            </div>
+
+            <button id="swap-btn">⇄</button>
+
+            <div class="input-group">
+                <input type="number" id="result" placeholder="Result" readonly>
+                <select id="to-currency"></select>
+            </div>
+
+            <div class="quick-toggle-container">
+                <p>Quick Toggle:</p>
+                <div id="quick-toggle"></div>
+            </div>
+
+            <button id="convert-btn">Convert</button>
+        </div>
+
+        <div class="history">
+            <h2>Conversion History</h2>
+            <ul id="history-list"></ul>
+            <button id="clear-history">Clear History</button>
+        </div>
+
+        <div class="favorites">
+            <h2>Favorite Pairs</h2>
+            <div id="favorites-container"></div>
+            <button id="save-favorite">Save Current Pair</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
